@@ -43,6 +43,14 @@ body {
 a {
   text-decoration: none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /* Container */
 .container {
   width: 100%;
@@ -669,15 +677,6 @@ footer .rights{
   .hero .hero-content .text-content a{
     display: block;
     margin: 15px auto 0;
-  }
-  .services-section .services{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .services-section .services .service{
-    width: 150px;
-    height: 150px;
-    margin: 25px 20px 0;
   }
   .form-section form{
     width: 100%;
