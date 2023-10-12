@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twenty Sayfen - Car Parts</title>
+    <meta name="description" content="Order car spare parts online. Specify your car's details, and we'll help you find the right parts. New and used car parts available. Contact us now!">
+    <meta name="keywords" content="Car parts, Spare parts, Automotive, Order car parts, New parts, Used parts, Vehicle specifications">
+    <meta name="author" content="Sayfen">
+    <link rel="icon" href="../assets/images/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/en-style.css">
+</head>
+
+<body>
+    <header class="wrapper">
+        <nav id="main_nav" class="container">
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon">
+                <a href="/"><img src="../assets/images/logo.png" alt="Logo"></a>
+                <img src="../assets/images/burger-menu.png" class="burger" alt="Burger Menu">
+            </label>
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img src="../assets/images/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Inquiries and Complaints</a></li>
+                </ul>
+            </div>
+            <div class="content content-btn">
+                <div class="navbar-button">
+                    <a href="#form">New Order</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="text-content" data-aos="fade-up" data-aos-duration="2000">
+                    <h1>Order Car Spare Parts Now from Twenty-Seven</h1>
+                    <p>Specify your order details in detail, then send your request, and we will contact you.</p>
+                    <a href="#form">New Order</a>
+                </div>
+                <div class="images-content" data-aos="fade-down" data-aos-duration="2000">
+                    <img src="../assets/images/hero-image.jpeg" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-section" id="form" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container">
+            <form id="booking-form">
+                <h2>New Order</h2>
+                <div class="form-row">
+                    <div class="form-col">
+                        <select name="carType">
+                            <option value="" disabled selected>Car Type</option>
+                            <option value="option">First Service</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <input type="text" id="model" name="model" placeholder="Model">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <select name="Specifications">
+                            <option value="" disabled selected>Specifications</option>
+                            <option value="option">Option</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <select name="manufacturingYear">
+                            <option value="" disabled selected>Manufacturing Year</option>
+                            <option value="option">Option</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="check-boxes">
+                        <div class="check-box-input">
+                            <input type="checkbox" id="new">
+                            <label for="new">New</label>
+                        </div>
+                        <div class="check-box-input">
+                            <input type="checkbox" id="used">
+                            <label for="used">Used</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <input type="number" name="VinNo" id="VinNo" placeholder="Chassis Number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textarea-row">
+                        <p>Requested Spare Parts (Please describe in detail)</p>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-col">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <button class="send" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <img class="footer-logo" src="../assets/images/footer-logo.png" alt="logo">
+        <div class="social-media">
+            <ul class="platforms">
+                <li class="platform"><a href="#"><img src="../assets/images/social-media-icons/insta-icon.png"
+                            alt=""></a></li>
+                <li class="platform"><a href="#"><img src="../assets/images/social-media-icons/snap-icon.png"
+                            alt=""></a>
+                </li>
+                <li class="platform"><a href="#"><img src="../assets/images/social-media-icons/whatsapp-icon.png"
+                            alt=""></a></li>
+            </ul>
+            <span class="rights">All rights reserved 2023</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../assets/js/en-main.js"></script>
+</body>
+
+</html>

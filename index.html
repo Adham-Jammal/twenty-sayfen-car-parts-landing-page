@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twenty Sayfen - Car Parts</title>
+    <meta name="description" content="قم بطلب قطع غيار سيارتك عبر الإنترنت. حدد تفاصيل سيارتك، وسنساعدك في العثور على القطع الصحيحة. قطع غيار جديدة ومستعملة متاحة. اتصل بنا الآن!">
+    <meta name="keywords" content="قطع غيار سيارات، قطع غيار، سيارات، طلب قطع غيار، قطع جديدة، قطع مستعملة، مواصفات السيارة">
+    <meta name="author" content="Sayfen">
+    <link rel="icon" href="./assets/images/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/ar-style.css">
+</head>
+
+<body>
+    <header class="wrapper">
+        <nav id="main_nav" class="container">
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><a href="/"><img src="./assets/images/logo.png" alt="Logo"></a><img
+                    src="./assets/images/burger-menu.png" class="burger" alt="burger"></a></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img src="./assets/images/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="links">
+                    <li> <a href="#">من نحن</a> </li>
+                    <li> <a href="#">استفسارات وشكاوى</a></li>
+                </ul>
+            </div>
+            <div class="content content-btn">
+                <div class="navbar-button">
+                    <a href="#form">طلب جديد</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="text-content" data-aos="fade-up" data-aos-duration="2000">
+                    <h1>اطلب قطع غيار سيارتك الان من تونتي سيفين</h1>
+                    <p>ضع مواصفات طلبك بالتفصيل ثم ارسل طلب وسيتم التواصل معك</p>
+                    <a href="#form">طلب جديد</a>
+                </div>
+                <div class="images-content" data-aos="fade-down" data-aos-duration="2000">
+                    <img src="./assets/images/hero-image.jpeg" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-section" id="form" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container">
+            <form id="booking-form">
+                <h2>طلب جديد</h2>
+                <div class="form-row">
+                    <div class="form-col">
+                        <select name="carType">
+                            <option value="" disabled selected>نوع السيارة</option>
+                            <option value="option">الخدمة الأولى</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <input type="text" id="model" name="نموذج" placeholder="الموديل">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <select name="Specifications">
+                            <option value="" disabled selected>المواصفات</option>
+                            <option value="option">خيار </option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <select name="manufacturingYear">
+                            <option value="" disabled selected>سنة الصنع</option>
+                            <option value="option">خيار </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="check-boxes">
+                        <div class="check-box-input">
+                            <input type="checkbox" id="new">
+                            <label for="new">جديد</label>
+                        </div>
+                        <div class="check-box-input">
+                            <input type="checkbox" id="used">
+                            <label for="used">مستعمل</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <input type="number" name="VinNo" id="VinNo" placeholder="رقم الشاص">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textarea-row">
+                        <p>قطع الغيار المطلوب (الرجاء كتابة الوصف بشكل دقيق </p>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <input type="text" name="name" id="name" placeholder="الاسم">
+                    </div>
+                    <div class="form-col">
+                        <input type="email" name="email" id="email" placeholder="الايميل">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <input type="number" name="phonenumber" id="phonenumber" placeholder="رقم الهاتف">
+                    </div>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">اوافق علي الشروط والاحكام</label>
+                </div>
+                <button class="send" type="submit">إرسال</button>
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <img class="footer-logo" src="./assets/images/footer-logo.png" alt="logo">
+        <div class="social-media">
+            <ul class="platforms">
+                <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/insta-icon.png"
+                            alt=""></a></li>
+                <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/snap-icon.png" alt=""></a>
+                </li>
+                <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/whatsapp-icon.png"
+                            alt=""></a></li>
+            </ul>
+            <span class="rights">حميع الحقوق محفوظة 2023</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./assets/js/ar-main.js"></script>
+</body>
+
+</html>
