@@ -9,16 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const model = document.getElementById('model').value;
         const specifications = document.querySelector('select[name="Specifications"]').value;
         const manufacturingYear = document.querySelector('select[name="manufacturingYear"]').value;
-        const newCheckBox = document.getElementById('new');
-        const usedCheckBox = document.getElementById('used');
         const vinNo = document.getElementById('VinNo').value;
+        const condition = document.querySelector('input[name="condition"]:checked').value;
         const description = document.getElementById('description').value;
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phonenumber = document.getElementById('phonenumber').value;
         const terms = document.getElementById('terms').checked;
-
-        if (!carType || !model || !specifications || !manufacturingYear || (!newCheckBox.checked && !usedCheckBox.checked) || !vinNo || !description || !name || !email || !phonenumber || !terms) {
+        if (!carType || !model || !specifications || !manufacturingYear || !condition || !vinNo || !description || !name || !email || !phonenumber || !terms) {
             Swal.fire({
                 icon: 'error',
                 title: 'خطأ',
@@ -33,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             model: model,
             specifications: specifications,
             manufacturingYear: manufacturingYear,
-            newCheckBox: newCheckBox.checked,
-            usedCheckBox: usedCheckBox.checked,
+            condition : condition,
             vinNo: vinNo,
             description: description,
             name: name,

@@ -26,8 +26,9 @@
             </div>
             <div class="content">
                 <ul class="links">
-                    <li> <a href="#">من نحن</a> </li>
-                    <li> <a href="#">استفسارات وشكاوى</a></li>
+                    <li> <a href="#who_we_are">من نحن</a> </li>
+                    <li> <a href="https://wa.me/+011">استفسارات وشكاوى</a></li>
+                    <li> <a href="/en">English</a></li>
                 </ul>
             </div>
             <div class="content content-btn">
@@ -83,14 +84,14 @@
                 <div class="form-row">
                     <div class="check-boxes">
                         <div class="check-box-input">
-                            <input type="checkbox" id="new">
+                            <input type="radio" value="new" id="new" name="condition">
                             <label for="new">جديد</label>
                         </div>
                         <div class="check-box-input">
-                            <input type="checkbox" id="used">
+                            <input type="radio" value="used" id="used" name="condition">
                             <label for="used">مستعمل</label>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="form-row">
                     <div class="form-col">
@@ -127,18 +128,26 @@
         </div>
     </section>
     <footer>
-        <img class="footer-logo" src="./assets/images/footer-logo.png" alt="logo">
-        <div class="social-media">
-            <ul class="platforms">
-                <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/insta-icon.png"
-                            alt=""></a></li>
-                <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/snap-icon.png" alt=""></a>
-                </li>
-                <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/whatsapp-icon.png"
-                            alt=""></a></li>
-            </ul>
-            <span class="rights">حميع الحقوق محفوظة 2023</span>
+        <div class="container footer-container">
+            <div class="content-side">
+                <img class="footer-logo" src="./assets/images/footer-logo.png" alt="logo">
+                <p class="who-we-are" id="who_we_are">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور  أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا </p>
+            </div>
+            <div class="social-media-side">
+                <div class="social-media">
+                    <ul class="platforms">
+                        <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/insta-icon.png"
+                                    alt=""></a></li>
+                        <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/snap-icon.png" alt=""></a>
+                        </li>
+                        <li class="platform"><a href="#"><img src="./assets/images/social-media-icons/whatsapp-icon.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <span class="rights">حميع الحقوق محفوظة 2023</span>
+
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
