@@ -511,6 +511,13 @@ nav .content .links::before {
   margin-bottom: 10px;
 
 }
+.form-section form .label{
+  display: block;
+  margin: 16px 5% -15px;
+  width: 90%;
+  font-size: 1.4rem;
+  padding: 0 15px;
+}
 .form-section form .form-row .textarea-row textarea{
   width: 100%;
   border-radius: 10px;

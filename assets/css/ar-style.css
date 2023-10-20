@@ -519,6 +519,13 @@ nav .content .links::before {
   padding: 25px;
   resize: none;
 }
+.form-section form .label{
+  display: block;
+  margin: 16px 5% -15px;
+  width: 90%;
+  font-size: 1.4rem;
+  padding: 0 15px;
+}
 .form-section form input , .form-section form select{
   text-align: center;
   color: var(--white);
